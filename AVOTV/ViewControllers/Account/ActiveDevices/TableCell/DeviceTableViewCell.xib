@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MADE TOMMY Medium_PERSONAL USE.otf">
+            <string>MADETOMMY-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="DeviceTableViewCell" customModule="AVOTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8Q-Ug-Fvp">
+                        <rect key="frame" x="5" y="11" width="319" height="138"/>
+                        <color key="backgroundColor" name="nav_color"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-XB-lia">
+                        <rect key="frame" x="245" y="118" width="61" height="28"/>
+                        <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                        <state key="normal" title="SIGN OUT">
+                            <color key="titleColor" name="secondary_white"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapSignoutButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="js6-fJ-VD4"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laptop_device" translatesAutoresizingMaskIntoConstraints="NO" id="sEe-3a-Htf">
+                        <rect key="frame" x="31" y="58" width="62.5" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sEe-3a-Htf" secondAttribute="height" multiplier="37:26" id="yTV-k1-oik"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-CK-zak">
+                        <rect key="frame" x="118.5" y="40.5" width="179.5" height="79"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-gD-kha">
+                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP Probook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2j-N2-sGk">
+                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="17"/>
+                                        <color key="textColor" name="primary_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="X2j-N2-sGk" firstAttribute="leading" secondItem="4gc-gD-kha" secondAttribute="leading" id="FYz-d7-J5C"/>
+                                    <constraint firstAttribute="height" constant="31" id="Fg8-oh-b9l"/>
+                                    <constraint firstAttribute="bottom" secondItem="X2j-N2-sGk" secondAttribute="bottom" id="Ufh-Mb-mG0"/>
+                                    <constraint firstItem="X2j-N2-sGk" firstAttribute="top" secondItem="4gc-gD-kha" secondAttribute="top" id="dT7-VG-ZIf"/>
+                                    <constraint firstAttribute="trailing" secondItem="X2j-N2-sGk" secondAttribute="trailing" id="tel-CA-sVQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vf3-k1-SZA">
+                                <rect key="frame" x="0.0" y="34" width="179.5" height="21"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="MCe-nB-2b0">
+                                        <rect key="frame" x="0.0" y="3" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="R7W-aV-6x3"/>
+                                            <constraint firstAttribute="width" secondItem="MCe-nB-2b0" secondAttribute="height" id="wTd-AY-sCw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIGERIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x8-LG-PwO">
+                                        <rect key="frame" x="21" y="0.0" width="158.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                                        <color key="textColor" name="primary_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1x8-LG-PwO" secondAttribute="trailing" id="cJi-df-A0q"/>
+                                    <constraint firstItem="MCe-nB-2b0" firstAttribute="leading" secondItem="vf3-k1-SZA" secondAttribute="leading" id="gBk-om-NFd"/>
+                                    <constraint firstItem="1x8-LG-PwO" firstAttribute="top" secondItem="vf3-k1-SZA" secondAttribute="top" id="jbN-Ov-RDu"/>
+                                    <constraint firstItem="1x8-LG-PwO" firstAttribute="leading" secondItem="MCe-nB-2b0" secondAttribute="trailing" constant="6" id="mdU-xA-ZVx"/>
+                                    <constraint firstItem="MCe-nB-2b0" firstAttribute="centerY" secondItem="1x8-LG-PwO" secondAttribute="centerY" id="nh2-b3-rrV"/>
+                                    <constraint firstAttribute="height" constant="21" id="wGY-by-oRb"/>
+                                    <constraint firstAttribute="bottom" secondItem="1x8-LG-PwO" secondAttribute="bottom" id="zXL-Ka-52b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyq-4a-Dg1">
+                                <rect key="frame" x="0.0" y="58" width="179.5" height="21"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="active_device" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-ZM-cpX">
+                                        <rect key="frame" x="0.0" y="3" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="3df-Xd-vuG"/>
+                                            <constraint firstAttribute="width" secondItem="KM5-ZM-cpX" secondAttribute="height" id="FPv-rR-T9x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACTIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-Wl-BFs">
+                                        <rect key="frame" x="21" y="0.0" width="158.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                                        <color key="textColor" name="primary_gold"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZpC-Wl-BFs" firstAttribute="leading" secondItem="KM5-ZM-cpX" secondAttribute="trailing" constant="6" id="2gx-rC-5xl"/>
+                                    <constraint firstItem="KM5-ZM-cpX" firstAttribute="leading" secondItem="zyq-4a-Dg1" secondAttribute="leading" id="B17-1m-Osn"/>
+                                    <constraint firstItem="KM5-ZM-cpX" firstAttribute="centerY" secondItem="ZpC-Wl-BFs" secondAttribute="centerY" id="Wvw-cA-cXL"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZpC-Wl-BFs" secondAttribute="bottom" id="fg0-MC-cU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZpC-Wl-BFs" secondAttribute="trailing" id="sYI-Bb-7CU"/>
+                                    <constraint firstAttribute="height" constant="21" id="t3A-Gk-L5z"/>
+                                    <constraint firstItem="ZpC-Wl-BFs" firstAttribute="top" secondItem="zyq-4a-Dg1" secondAttribute="top" id="xLB-pP-hdZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="cSe-CK-zak" firstAttribute="leading" secondItem="sEe-3a-Htf" secondAttribute="trailing" constant="25" id="2fF-cP-biY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VIP-XB-lia" secondAttribute="bottom" constant="3" id="HuQ-DK-uwP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VIP-XB-lia" secondAttribute="trailing" constant="3" id="UiD-9j-rTT"/>
+                    <constraint firstItem="F8Q-Ug-Fvp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="UkL-nN-O0R"/>
+                    <constraint firstAttribute="trailing" secondItem="F8Q-Ug-Fvp" secondAttribute="trailing" constant="5" id="Vqn-f3-OPG"/>
+                    <constraint firstItem="sEe-3a-Htf" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.19" id="WcB-2l-sWA"/>
+                    <constraint firstAttribute="trailing" secondItem="cSe-CK-zak" secondAttribute="trailing" constant="31" id="eUM-y0-NMe"/>
+                    <constraint firstItem="F8Q-Ug-Fvp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="fc2-7G-1Ji"/>
+                    <constraint firstItem="cSe-CK-zak" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="luc-0k-qSe"/>
+                    <constraint firstItem="sEe-3a-Htf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="oP1-s4-mO9"/>
+                    <constraint firstItem="sEe-3a-Htf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ppz-iU-hix"/>
+                    <constraint firstAttribute="bottom" secondItem="F8Q-Ug-Fvp" secondAttribute="bottom" constant="11" id="qfe-rg-Jb4"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="deviceImageView" destination="sEe-3a-Htf" id="XVC-mf-cjK"/>
+                <outlet property="deviceNameLabel" destination="X2j-N2-sGk" id="QBk-NO-oXq"/>
+                <outlet property="locationLabel" destination="1x8-LG-PwO" id="tmR-I9-u2O"/>
+                <outlet property="statusLabel" destination="ZpC-Wl-BFs" id="ztJ-yv-DDn"/>
+                <outlet property="statusView" destination="zyq-4a-Dg1" id="led-Gy-H1n"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="161.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="active_device" width="11" height="11"/>
+        <image name="laptop_device" width="37" height="26"/>
+        <image name="location" width="9.5" height="13"/>
+        <namedColor name="nav_color">
+            <color red="0.17647058823529413" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary_gold">
+            <color red="0.76470588235294112" green="0.5607843137254902" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary_white">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary_white">
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MADE TOMMY Medium_PERSONAL USE.otf">
+            <string>MADETOMMY-Medium</string>
+        </array>
+        <array key="MADE TOMMY Regular_PERSONAL USE.otf">
+            <string>MADETOMMY</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveTVViewController" customModule="AVOTV" customModuleProvider="target">
+            <connections>
+                <outlet property="channelTableView" destination="3dU-lI-CES" id="GKU-Sp-q2X"/>
+                <outlet property="currentDayTimeLabel" destination="6OR-EA-h6l" id="nd4-5P-1bN"/>
+                <outlet property="descriptionLabel" destination="GUu-qb-u5W" id="eyV-2Q-DzW"/>
+                <outlet property="endTimeLabel" destination="txw-IP-Puh" id="jes-d4-4Ht"/>
+                <outlet property="startTimeLabel" destination="Wtx-tG-CmW" id="a7B-US-8Z4"/>
+                <outlet property="timeProgressIndicatorView" destination="L12-wI-LFQ" id="zcc-1g-kY2"/>
+                <outlet property="timeProgressIndicatorViewXConstraint" destination="yw4-vc-1eV" id="JFa-jL-UCi"/>
+                <outlet property="timeProgressView" destination="ASR-wy-87P" id="rzB-1M-oVP"/>
+                <outlet property="timeView" destination="bj4-CO-34l" id="4ee-QQ-Pfe"/>
+                <outlet property="titleLabel" destination="aNi-HT-Dpm" id="Qkb-Ph-BGv"/>
+                <outlet property="videoPlayer" destination="mQm-co-l8q" id="u0I-dz-Mf5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewsCountLabel" destination="kHV-bO-CJT" id="SUY-LQ-I2F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQm-co-l8q" customClass="AVOVideoPlayerView" customModule="AVOTV" customModuleProvider="target">
+                    <rect key="frame" x="11" y="59" width="392" height="260"/>
+                    <color key="backgroundColor" name="table_bg_color"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watching SilverBird TV Right Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNi-HT-Dpm">
+                    <rect key="frame" x="11" y="330" width="327" height="20"/>
+                    <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="17"/>
+                    <color key="textColor" name="primary_white"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Views" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-bO-CJT">
+                    <rect key="frame" x="354.5" y="331.5" width="48.5" height="16.5"/>
+                    <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="14"/>
+                    <color key="textColor" name="primary_white"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUu-qb-u5W">
+                    <rect key="frame" x="11" y="406" width="327" height="45.5"/>
+                    <string key="text">SilverBird Television is the leading entertainment Television channel in Nigeria, provding its audience with up to date news, sports, entertainment programmes.</string>
+                    <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="13"/>
+                    <color key="textColor" name="primary_white"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3dU-lI-CES">
+                    <rect key="frame" x="11" y="462.5" width="392" height="433.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" name="nav_color"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="81" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bj4-CO-34l">
+                    <rect key="frame" x="0.0" y="357" width="414" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun 12:45 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OR-EA-h6l">
+                            <rect key="frame" x="11" y="12" width="82.5" height="16"/>
+                            <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEg-Fb-PkP">
+                            <rect key="frame" x="104.5" y="0.0" width="1" height="40"/>
+                            <color key="backgroundColor" name="primary_white"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="vm2-g4-4Tl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="19"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="12:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtx-tG-CmW">
+                            <rect key="frame" x="116.5" y="12" width="175.5" height="16"/>
+                            <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyK-JR-Fia">
+                            <rect key="frame" x="303" y="0.0" width="1" height="40"/>
+                            <color key="backgroundColor" name="primary_white"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="2GO-J4-qWz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="19"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="08:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txw-IP-Puh">
+                            <rect key="frame" x="315" y="12" width="88" height="16"/>
+                            <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="13"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-fQ-i34">
+                            <rect key="frame" x="0.0" y="39" width="414" height="1"/>
+                            <color key="backgroundColor" name="primary_white"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="yuw-Ay-TGu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="19"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ASR-wy-87P">
+                            <rect key="frame" x="104.5" y="37.5" width="199.5" height="2.5"/>
+                            <color key="progressTintColor" name="primary_gold"/>
+                            <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </progressView>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L12-wI-LFQ">
+                            <rect key="frame" x="101.5" y="34" width="14" height="505"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIf-7N-0Bz">
+                                    <rect key="frame" x="6" y="7" width="2" height="498"/>
+                                    <color key="backgroundColor" name="primary_gold"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1.55" id="9eM-6C-Vts"/>
+                                    </constraints>
+                                </view>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="progress_bar" translatesAutoresizingMaskIntoConstraints="NO" id="eQk-Gs-d8Q">
+                                    <rect key="frame" x="0.0" y="0.0" width="14" height="10"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="14" id="NYH-A1-WUI"/>
+                                        <constraint firstAttribute="height" constant="10" id="kMN-5j-5Ny"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="bIf-7N-0Bz" firstAttribute="centerX" secondItem="L12-wI-LFQ" secondAttribute="centerX" id="9hD-xe-qQ1"/>
+                                <constraint firstItem="eQk-Gs-d8Q" firstAttribute="leading" secondItem="L12-wI-LFQ" secondAttribute="leading" id="Clk-R3-Cd9"/>
+                                <constraint firstItem="eQk-Gs-d8Q" firstAttribute="top" secondItem="L12-wI-LFQ" secondAttribute="top" id="PzK-5Y-drL"/>
+                                <constraint firstAttribute="bottom" secondItem="bIf-7N-0Bz" secondAttribute="bottom" id="TKj-cc-5dg"/>
+                                <constraint firstItem="bIf-7N-0Bz" firstAttribute="top" secondItem="eQk-Gs-d8Q" secondAttribute="bottom" constant="-3" id="co9-79-xuc"/>
+                                <constraint firstAttribute="width" constant="14" id="fXf-eY-X8w"/>
+                                <constraint firstAttribute="trailing" secondItem="eQk-Gs-d8Q" secondAttribute="trailing" id="xrf-EQ-0ej"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FyK-JR-Fia" firstAttribute="top" secondItem="bj4-CO-34l" secondAttribute="top" id="3jS-Yh-fB6"/>
+                        <constraint firstItem="Wtx-tG-CmW" firstAttribute="leading" secondItem="zEg-Fb-PkP" secondAttribute="trailing" constant="11" id="6nc-GI-g0J"/>
+                        <constraint firstItem="zEg-Fb-PkP" firstAttribute="top" secondItem="bj4-CO-34l" secondAttribute="top" id="77p-0E-9kR"/>
+                        <constraint firstItem="fzq-fQ-i34" firstAttribute="leading" secondItem="bj4-CO-34l" secondAttribute="leading" id="DeN-sp-rAl"/>
+                        <constraint firstItem="FyK-JR-Fia" firstAttribute="leading" secondItem="Wtx-tG-CmW" secondAttribute="trailing" constant="11" id="F3S-yw-16L"/>
+                        <constraint firstAttribute="bottom" secondItem="FyK-JR-Fia" secondAttribute="bottom" id="Gy7-C8-cX7"/>
+                        <constraint firstItem="6OR-EA-h6l" firstAttribute="centerY" secondItem="bj4-CO-34l" secondAttribute="centerY" id="Jox-hn-FoX"/>
+                        <constraint firstItem="zEg-Fb-PkP" firstAttribute="leading" secondItem="6OR-EA-h6l" secondAttribute="trailing" constant="11" id="MTa-uZ-PxW"/>
+                        <constraint firstItem="Wtx-tG-CmW" firstAttribute="centerY" secondItem="6OR-EA-h6l" secondAttribute="centerY" id="Q7a-9Z-lao"/>
+                        <constraint firstItem="L12-wI-LFQ" firstAttribute="top" secondItem="ASR-wy-87P" secondAttribute="bottom" constant="-5" id="SPg-2z-xW4"/>
+                        <constraint firstItem="txw-IP-Puh" firstAttribute="width" secondItem="Wtx-tG-CmW" secondAttribute="width" multiplier="0.5" id="Vut-ky-sMG"/>
+                        <constraint firstItem="txw-IP-Puh" firstAttribute="leading" secondItem="FyK-JR-Fia" secondAttribute="trailing" constant="11" id="ZEH-Ms-iRP"/>
+                        <constraint firstItem="ASR-wy-87P" firstAttribute="trailing" secondItem="FyK-JR-Fia" secondAttribute="trailing" id="asD-8n-h7j"/>
+                        <constraint firstAttribute="bottom" secondItem="zEg-Fb-PkP" secondAttribute="bottom" id="cjr-BC-rsA"/>
+                        <constraint firstItem="txw-IP-Puh" firstAttribute="centerY" secondItem="Wtx-tG-CmW" secondAttribute="centerY" id="fHd-fe-bHD"/>
+                        <constraint firstAttribute="trailing" secondItem="fzq-fQ-i34" secondAttribute="trailing" id="fqB-eh-FI9"/>
+                        <constraint firstItem="ASR-wy-87P" firstAttribute="leading" secondItem="zEg-Fb-PkP" secondAttribute="leading" id="gMs-aV-JLA"/>
+                        <constraint firstAttribute="trailing" secondItem="txw-IP-Puh" secondAttribute="trailing" constant="11" id="gqv-uB-qua"/>
+                        <constraint firstAttribute="bottom" secondItem="fzq-fQ-i34" secondAttribute="bottom" id="qUr-mh-dDK"/>
+                        <constraint firstAttribute="height" constant="40" id="t4z-Lf-43q"/>
+                        <constraint firstItem="ASR-wy-87P" firstAttribute="bottom" secondItem="fzq-fQ-i34" secondAttribute="top" id="vro-1L-uVj"/>
+                        <constraint firstItem="6OR-EA-h6l" firstAttribute="leading" secondItem="bj4-CO-34l" secondAttribute="leading" constant="11" id="wGM-iR-NVq"/>
+                        <constraint firstItem="L12-wI-LFQ" firstAttribute="leading" secondItem="ASR-wy-87P" secondAttribute="leading" constant="-3" id="yw4-vc-1eV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background_color"/>
+            <constraints>
+                <constraint firstItem="aNi-HT-Dpm" firstAttribute="leading" secondItem="mQm-co-l8q" secondAttribute="leading" id="8he-AZ-4CR"/>
+                <constraint firstItem="3dU-lI-CES" firstAttribute="top" secondItem="GUu-qb-u5W" secondAttribute="bottom" constant="11" id="9TI-sJ-ZBK"/>
+                <constraint firstItem="3dU-lI-CES" firstAttribute="leading" secondItem="mQm-co-l8q" secondAttribute="leading" id="BWf-AC-mXQ"/>
+                <constraint firstItem="aNi-HT-Dpm" firstAttribute="top" secondItem="mQm-co-l8q" secondAttribute="bottom" constant="11" id="Bwe-7E-59f"/>
+                <constraint firstItem="3dU-lI-CES" firstAttribute="trailing" secondItem="mQm-co-l8q" secondAttribute="trailing" id="CSa-dT-Eil"/>
+                <constraint firstAttribute="bottom" secondItem="3dU-lI-CES" secondAttribute="bottom" id="FpZ-aq-ZB7"/>
+                <constraint firstItem="mQm-co-l8q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="HDE-LZ-vgh"/>
+                <constraint firstItem="GUu-qb-u5W" firstAttribute="trailing" secondItem="aNi-HT-Dpm" secondAttribute="trailing" id="I03-P2-7hV"/>
+                <constraint firstItem="GUu-qb-u5W" firstAttribute="leading" secondItem="aNi-HT-Dpm" secondAttribute="leading" id="Ifo-Ob-seU"/>
+                <constraint firstItem="kHV-bO-CJT" firstAttribute="centerY" secondItem="aNi-HT-Dpm" secondAttribute="centerY" id="My5-fP-E6M"/>
+                <constraint firstItem="kHV-bO-CJT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aNi-HT-Dpm" secondAttribute="trailing" constant="7" id="POW-q3-Erw"/>
+                <constraint firstItem="mQm-co-l8q" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.29" id="TRo-2q-R29"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mQm-co-l8q" secondAttribute="trailing" constant="11" id="UIV-NX-61V"/>
+                <constraint firstItem="bj4-CO-34l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cP7-7u-IvP"/>
+                <constraint firstItem="kHV-bO-CJT" firstAttribute="trailing" secondItem="mQm-co-l8q" secondAttribute="trailing" id="hOK-cH-DFZ"/>
+                <constraint firstAttribute="trailing" secondItem="bj4-CO-34l" secondAttribute="trailing" id="j7X-aB-XJo"/>
+                <constraint firstItem="mQm-co-l8q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11" id="l3X-kc-uEg"/>
+                <constraint firstItem="bj4-CO-34l" firstAttribute="top" secondItem="aNi-HT-Dpm" secondAttribute="bottom" constant="7" id="pNr-uA-3G1"/>
+                <constraint firstItem="L12-wI-LFQ" firstAttribute="bottom" secondItem="3dU-lI-CES" secondAttribute="bottom" id="rgI-hi-2DU"/>
+                <constraint firstItem="GUu-qb-u5W" firstAttribute="top" secondItem="bj4-CO-34l" secondAttribute="bottom" constant="9" id="wac-v3-30a"/>
+            </constraints>
+            <point key="canvasLocation" x="121.73913043478262" y="133.92857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="progress_bar" width="25" height="13"/>
+        <namedColor name="background_color">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="nav_color">
+            <color red="0.17647058823529413" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary_gold">
+            <color red="0.76470588235294112" green="0.5607843137254902" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary_white">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="table_bg_color">
+            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

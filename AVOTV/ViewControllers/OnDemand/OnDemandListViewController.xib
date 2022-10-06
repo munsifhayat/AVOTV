@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MADE TOMMY Medium_PERSONAL USE.otf">
+            <string>MADETOMMY-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnDemandListViewController" customModule="AVOTV" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="WiX-2d-P2w" id="ZBA-mr-Agu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse somme of the hottest playlist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-cO-mOe">
+                    <rect key="frame" x="11" y="55" width="392" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="XBk-YR-7dy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="17"/>
+                    <color key="textColor" name="primary_white"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WiX-2d-P2w">
+                    <rect key="frame" x="11" y="117" width="392" height="745"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background_color"/>
+            <constraints>
+                <constraint firstItem="gz3-cO-mOe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11" id="Ajy-2n-Fmz"/>
+                <constraint firstItem="gz3-cO-mOe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="DeI-Za-Y4z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WiX-2d-P2w" secondAttribute="bottom" id="SMF-3O-5wU"/>
+                <constraint firstItem="WiX-2d-P2w" firstAttribute="top" secondItem="gz3-cO-mOe" secondAttribute="bottom" constant="11" id="g69-V8-2X4"/>
+                <constraint firstItem="WiX-2d-P2w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11" id="ohe-EJ-NNG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gz3-cO-mOe" secondAttribute="trailing" constant="11" id="orr-J0-THR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WiX-2d-P2w" secondAttribute="trailing" constant="11" id="rHp-r1-fh4"/>
+            </constraints>
+            <point key="canvasLocation" x="118.84057971014494" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background_color">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="primary_white">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

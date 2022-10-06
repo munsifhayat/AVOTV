@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MADE TOMMY Medium_PERSONAL USE.otf">
+            <string>MADETOMMY-Medium</string>
+        </array>
+        <array key="MADE TOMMY Regular_PERSONAL USE.otf">
+            <string>MADETOMMY</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingPopUpVC" customModule="AVOTV" customModuleProvider="target">
+            <connections>
+                <outlet property="ratigView" destination="WD5-85-bjt" id="B2m-0X-iQh"/>
+                <outlet property="view" destination="X1d-nz-dkd" id="fyi-Ck-Lzm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="X1d-nz-dkd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQk-0r-Atc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.46999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-JY-2KM">
+                    <rect key="frame" x="56.5" y="323" width="301" height="250.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-Rg-L8o">
+                            <rect key="frame" x="104.5" y="25" width="92" height="31.5"/>
+                            <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="27"/>
+                            <color key="textColor" name="primary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show your love by rating us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iri-UY-sXL">
+                            <rect key="frame" x="45" y="67.5" width="211" height="20"/>
+                            <fontDescription key="fontDescription" name="MADETOMMY" family="MADE TOMMY" pointSize="17"/>
+                            <color key="textColor" name="secondary_white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-85-bjt" customClass="CosmosView" customModule="Cosmos">
+                            <rect key="frame" x="48" y="112.5" width="205" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="rating_filled"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="rating_unfilled"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                    <real key="value" value="37"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNi-9T-kOa">
+                            <rect key="frame" x="85.5" y="180.5" width="130" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6QY-13-KHR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MADETOMMY-Medium" family="MADE TOMMY" pointSize="18"/>
+                            <state key="normal" title="SUBMIT  " backgroundImage="login_btn">
+                                <color key="titleColor" name="primary_white"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapSubmit:" destination="-1" eventType="touchUpInside" id="FNY-Oi-Q6G"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="background_color"/>
+                    <constraints>
+                        <constraint firstItem="WD5-85-bjt" firstAttribute="top" secondItem="iri-UY-sXL" secondAttribute="bottom" constant="25" id="2YP-NT-n6k"/>
+                        <constraint firstItem="xNi-9T-kOa" firstAttribute="top" secondItem="WD5-85-bjt" secondAttribute="bottom" constant="31" id="4fX-cp-DUp"/>
+                        <constraint firstItem="iri-UY-sXL" firstAttribute="top" secondItem="v9W-Rg-L8o" secondAttribute="bottom" constant="11" id="DyS-3u-2j0"/>
+                        <constraint firstAttribute="bottom" secondItem="xNi-9T-kOa" secondAttribute="bottom" constant="25" id="EUj-7D-K7a"/>
+                        <constraint firstItem="WD5-85-bjt" firstAttribute="centerX" secondItem="rQx-JY-2KM" secondAttribute="centerX" id="GdH-ix-Lpt"/>
+                        <constraint firstItem="iri-UY-sXL" firstAttribute="centerX" secondItem="rQx-JY-2KM" secondAttribute="centerX" id="b5J-t1-YmT"/>
+                        <constraint firstAttribute="trailing" secondItem="iri-UY-sXL" secondAttribute="trailing" constant="45" id="cue-SC-8WR"/>
+                        <constraint firstItem="xNi-9T-kOa" firstAttribute="centerX" secondItem="rQx-JY-2KM" secondAttribute="centerX" id="dlY-YJ-QCh"/>
+                        <constraint firstItem="v9W-Rg-L8o" firstAttribute="centerX" secondItem="rQx-JY-2KM" secondAttribute="centerX" id="lQP-d9-00m"/>
+                        <constraint firstItem="v9W-Rg-L8o" firstAttribute="top" secondItem="rQx-JY-2KM" secondAttribute="top" constant="25" id="qPl-gQ-gCE"/>
+                        <constraint firstItem="iri-UY-sXL" firstAttribute="leading" secondItem="rQx-JY-2KM" secondAttribute="leading" constant="45" id="yaq-E3-42R"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.43921568630000002" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="11"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hjz-3W-QHz"/>
+            <constraints>
+                <constraint firstItem="cQk-0r-Atc" firstAttribute="leading" secondItem="hjz-3W-QHz" secondAttribute="leading" id="Bzk-ll-lmi"/>
+                <constraint firstItem="rQx-JY-2KM" firstAttribute="centerY" secondItem="X1d-nz-dkd" secondAttribute="centerY" id="D3d-qV-y2u"/>
+                <constraint firstItem="hjz-3W-QHz" firstAttribute="trailing" secondItem="cQk-0r-Atc" secondAttribute="trailing" id="G55-pe-MAS"/>
+                <constraint firstAttribute="bottom" secondItem="cQk-0r-Atc" secondAttribute="bottom" id="SFN-Nt-lDD"/>
+                <constraint firstItem="cQk-0r-Atc" firstAttribute="top" secondItem="X1d-nz-dkd" secondAttribute="top" id="SLS-MW-RbN"/>
+                <constraint firstItem="rQx-JY-2KM" firstAttribute="centerX" secondItem="X1d-nz-dkd" secondAttribute="centerX" id="zJV-6Z-iJA"/>
+            </constraints>
+            <point key="canvasLocation" x="-44.927536231884062" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="WD5-85-bjt">
+            <size key="intrinsicContentSize" width="205" height="37"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="login_btn" width="130" height="50"/>
+        <image name="rating_filled" width="42" height="40"/>
+        <image name="rating_unfilled" width="41.5" height="39.5"/>
+        <namedColor name="background_color">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="primary_white">
+            <color red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary_white">
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
